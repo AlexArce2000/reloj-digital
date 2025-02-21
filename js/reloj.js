@@ -4,15 +4,24 @@ const mostrarReloj = ()=>{
     let min = formatoHora(fecha.getMinutes());
     let seg = formatoHora(fecha.getSeconds());
     console.log(`${hr}:${min}:${seg}`)
-    document.getElementById('hora').innerHTML = `${hr}:${min}:${seg}`;
+    document.getElementById('hora').innerHTML=`${hr}`;
+    document.getElementById('min').innerHTML=`${min}`;
+    document.getElementById('seg').innerHTML=`${seg}`;
 
-    const meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov','Dic'];
-    const dias = ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'];
+
+    const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre','Diciembre'];
+    const dias = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sábado'];
     let diaSemana = dias[fecha.getDay()]
     let dia = fecha.getDate();
     let mes = meses[fecha.getMonth()];
+    let anio = fecha.getFullYear();
     let fechaTexto = `${diaSemana}, ${dia} ${mes} ${fecha.getFullYear()}`;
-    document.getElementById('fecha').innerHTML = fechaTexto;
+    document.getElementById('diaSemana').innerHTML =`${diaSemana}`;
+    document.getElementById('dia').innerHTML =`${dia}`;
+    document.getElementById('mes').innerHTML =`${mes}`;
+    document.getElementById('anio').innerHTML =`${anio}`;
+
+
     document.getElementById('contenedor').classList.toggle('animar') 
 }
 

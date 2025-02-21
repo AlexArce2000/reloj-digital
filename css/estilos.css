@@ -1,27 +1,44 @@
 html {
-    background-color: #2196f3;
-    font-family: "helvetica neue",
-      -webkit-gradient(linear, right top, left top, from(#2196f3), to(#009688)),
-      linear-gradient(to left, #2196f3, #009688);
-  }
-#reloj{
-    font-family: sans-serif;
-    font-size: 60px;
-    text-shadow: 0px 0px 1px #333;
+    background-color: #24273a;
+    font-family: "Courier New", monospace;
     color: #fff;
 }
-.reloj-contenedor{
-    background-color: rgb(50, 59, 182);
-    padding: 25px;
-    max-width: 350px;
+
+#reloj {
     text-align: center;
-    border-radius: 5px;
-    margin: 0 auto;
     margin-top: 10%;
 }
-#fecha{
-    letter-spacing: 10px;
-    font-size: 15px;
+
+.reloj-contenedor {
+    background-color: #000;
+    padding: 25px;
+    max-width: 600px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+
+pre {
+    font-size: 20px;
+    color: #ff4081;
+    text-shadow: 0px 0px 1px #ff4081;
+    text-align: left;
+}
+
+span {
+    color: #ffffff;
+}
+
+.tipo{
+    color: #bca0d8
+}
+
+.string {
+    color: #5fdb73;
+}
+.clock{
+    color: #e3ad6f;
 }
 .animar{
     border: rgb(0, 0, 0) 2px solid;

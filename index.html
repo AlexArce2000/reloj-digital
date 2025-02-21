@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reloj digital</title>
+    <title>Reloj estructura</title>
     <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body onload="mostrarReloj()" background="">
     <div id="reloj">
         <div class="reloj-contenedor" id="contenedor">
-            <div id="hora">Reloj Digital</div>
-            <div id="fecha">con JavaScript</div>
+            <pre>
+                <span class="tipo">struct</span> <span class="clock">clock</span> 
+                {
+                    <span class="tipo">int</span> hours = <span id="hora">00</span>;
+                    <span class="tipo">int</span> minutes = <span id="min">00</span>;
+                    <span class="tipo">int</span> seconds = <span id="seg">00</span>;
+                    <span class="tipo">char</span> *dayWeek = <span class="string">"<span class="string" id="diaSemana">Vierasdf</span>"</span>;
+                    <span class="tipo">int</span> day = <span id="dia">01</span>;
+                    <span class="tipo">char</span> *month = <span class="string">"<span class="string" id="mes">January</span>"</span>;
+                    <span class="tipo">int</span> year = <span id="anio">2000</span>;
+                };  
+            </pre>
         </div>
     </div>
 
